@@ -28,6 +28,9 @@ def make_http_request(ip, port):
 
 
 # Write your code below here for A08
+ip_address = socket.gethostbyname(hostname)
+response = make_http_request(ip_address, 80)
+print(response)
 # You shouldn't need to import anything else besides socket which is already included
 
 # Firstly, find the function to return an ip address from whatever the hostname is
